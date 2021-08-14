@@ -15,12 +15,13 @@ nav {
 
 @keyframes rotation {
     from {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     to {
-      transform: rotate(359deg);
+        transform: rotate(359deg);
     }
-  }
+}
 
 
 .homepage {
@@ -29,7 +30,7 @@ nav {
 }
 
 .homesection {
-    background-color: #FCFCD2;   
+    background-color: #FCFCD2;
     padding-bottom: 50px;
     padding-top: 30px;
     /* #FCFCD2 */
@@ -40,28 +41,40 @@ nav {
 }
 
 .aboutsection {
-    background-color: #ffeecf;   
+    background-color: #d2e7d2;
+    padding-bottom: 50px;
+    padding-top: 25px;
+    /* #FCFCD2 */
+    /* #d2e7d2 */
+    /* #dadfe8 */
+    /* #ffeecf 1 */
+}
+
+.reviewsection {
+    background-color: #dadfe8;
     padding-bottom: 50px;
     padding-top: 25px;
     /* #FCFCD2 */
     /* #d2e7d2 */
     /* #dadfe8 */
     /* #ffeecf */
-
-
 }
 
 .waves {
     width: 100%;
-    height:auto;
+    height: auto;
 }
 
 .wavesbot {
     width: 100%;
-    transform:rotate(180deg);
+    transform: rotate(180deg);
     margin-bottom: 150px;
 }
 
+.title-text {
+    padding-bottom: 25px;
+    padding-top: 15px;
+}
 
 .list-seperator {
     margin-top: 35px;
@@ -75,11 +88,12 @@ nav {
     margin-bottom: 100%;
 }
 
-.about-text {
-    margin-top: 10px;
+.pellefront {
+    display: inline;
+    width: 50px;
 }
 
-.pellefront {
+.reviewimg {
     display: inline;
     width: 50px;
 }
@@ -107,6 +121,7 @@ nav {
 } */
 
 @media(max-width: 500px) {
+
     /* .title {
         font-size: 2.6em;
     } */
@@ -117,12 +132,12 @@ nav {
 
 @media(max-width: 450px) {
     .wavestop {
-        margin-top:20px;
+        margin-top: 20px;
     }
-    
+
     .wavesbot {
         width: 100%;
-        transform:rotate(180deg);
+        transform: rotate(180deg);
         margin-bottom: 150px;
     }
 }
@@ -142,22 +157,22 @@ nav {
 /* width */
 ::-webkit-scrollbar {
     width: 5px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+
+/* Track */
+::-webkit-scrollbar-track {
     background: #d8d8d8;
     border-radius: 5px;
-    
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 5px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
     background: #555;
-  }
+}

@@ -1,288 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fortune Shop</title>
-    <link rel="shortcut icon" href="imgs/favicon-16x16.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fortune Shop</title>
+  <link rel="shortcut icon" href="imgs/favicon-16x16.png" type="image/x-icon">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./styles/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./styles/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-          
-          <a class="navbar-brand" href="#">
-            <img src="./imgs/logo.png" alt="Fortune Shop" class="logo" width="30" height="30">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0" style="--bs-scroll-height: 100px;">
-              <li class="nav-item col-6 col-md-auto">
-                <a class="nav-link active p-2" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item col-6 col-md-auto">
-                <a class="nav-link p-2" href="#about">About</a>
-              </li>
-              <li class="nav-item col-6 col-md-auto">
-                <a class="nav-link p-2" href="#">Catalog</a>
-              </li>
-              <li class="nav-item col-6 col-md-auto">
-                <a class="nav-link p-2" href="#">Reviews</a>
-              </li>
-              <!-- <li class="nav-item">
+<body id="home" data-bs-spy="scroll" data-bs-target="#navbarId" data-bs-offset="400" class="scrollspy" tabindex="0">
+
+  <nav id="navbarId" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#">
+        <img src="./imgs/logo.png" alt="Fortune Shop" class="logo" width="30" height="30">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0" style="--bs-scroll-height: 100px;">
+          <li class="nav-item col-6 col-md-auto">
+            <a class="nav-link p-2" href="#home">Home</a>
+          </li>
+          <li class="nav-item col-6 col-md-auto">
+            <a class="nav-link p-2" href="#about">About</a>
+          </li>
+          <li class="nav-item col-6 col-md-auto">
+            <a class="nav-link p-2" href="#reviews">Reviews</a>
+          </li>
+          <li class="nav-item col-6 col-md-auto">
+            <a class="nav-link p-2" href="#catalog">Catalog</a>
+          </li>
+          <!-- <li class="nav-item">
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
               </li> -->
-            </ul>
+        </ul>
 
-            <hr class="d-md-none text-white-50">
+        <hr class="d-md-none text-white-50">
 
-            <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav ms-md-auto pt-0 pb-2 py-md-0">
-                <li class="nav-item col-6 col-md-auto">
-                    <a href="#" class="nav-link p-2">Discord</a>
-                  </li>
-                <li class="nav-item col-6 col-md-auto">
-                    <a href="#" class="nav-link p-2">Contact</a>
-                  </li>
-              </ul>
-          </div>
-        </div>
-      </nav>
-
-
-    <div class="homepage text-center">
-        <h1 class="title">
-            2b2t's <span id="typed"></span> Shop
-        </h1>
-        <p>
-          <em>Established 2021  </em>
-        </p>
-          
+        <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav ms-md-auto pt-0 pb-2 py-md-0">
+          <li class="nav-item col-6 col-md-auto">
+            <a href="https://www.google.com" class="nav-link p-2">Discord</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
+
+
+  <div class="homepage text-center">
+    <h1 class="title">
+      2b2t's <span id="typed"></span> Shop
+    </h1>
+    <p>
+      <em>Established 2021 </em>
+    </p>
+
+  </div>
+
 
 
   <div class="entirehomesection">
     <img class="waves wavestop" src="./imgs/waves/3_waves/yellow_3.png" alt="">
     <section class="homesection">
-     
+
       <div class="reasonscontent">
 
 
-     <div class="reasons">
-       <h2 class="reasons-text p-2 text-center">
-           Why choose us over other competitors?
-       </h1>
-       <div class="container">
-         <div class="row">
-             <div class="col-12 col-sm-6 col-lg-4 justify-content-center mb-3">
-                 <div class="card shadow-lg">
-                     <!-- <img src="./imgs/echest.png" class="card-img-top" alt="EnderChest"> -->
-                     <div class="card-body">
-                       <h5 class="card-title">Cheapest Prices</h5>
-                       <p class="card-text">Our prices are some of the cheapest around. 
-                       Other 2b2t shops' prices can go up to $5 for a shulker, 
-                       while here we cut our prices often and can go as low as $0.50-$1!
-                       </p>
-                     </div>
-                   </div>
-             </div>
-             <div class="col-12 col-sm-6 col-lg-4 justify-content-center mb-3">
-                 <div class="card shadow-lg">
-                     <!-- <img src="./imgs/echest.png" class="card-img-top" alt="EnderChest"> -->
-                     <div class="card-body">
-                       <h5 class="card-title">Fastest Delivery</h5>
-                       <p class="card-text">Our delivery team works hard to make sure
-                       that our que stays clear, and your items get to you as quickly
-                       as possible! Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                       Enim earum laboriosam facilis repudiandae ullam similique nam, reprehenderit 
-                       ratione illum! Commodi, vero obcaecati fugit quo hic ipsum voluptate atque 
-                       dignissimos quas.
-                       </p>
-                     </div>
-                   </div>
-             </div>
-             <div class="col-12 col-sm-6 col-lg-4 justify-content-center mb-3">
-                 <div class="card shadow-lg">
-                     <!-- <img src="./imgs/echest.png" class="card-img-top" alt="EnderChest"> -->
-                     <div class="card-body">
-                       <h5 class="card-title">Great Support</h5>
-                       <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                       Quam cumque aut minus atque hic veritatis dolorum nemo qui nulla. 
-                       Labore, quod? Commodi excepturi dignissimos voluptatem deleniti architecto vitae. 
-                       Rem, cupiditate.
-                       </p>
-                     </div>
-                   </div>
-             </div>
-             <div class="col-12 col-sm-6 col-lg-4 justify-content-center mb-3">
-                 <div class="card shadow-lg">
-                     <!-- <img src="./imgs/echest.png" class="card-img-top" alt="EnderChest"> -->
-                     <div class="card-body">
-                       <h5 class="card-title">Reputable Owners</h5>
-                       <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                       Quam cumque aut minus atque hic veritatis dolorum nemo qui nulla. 
-                       Labore, quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                       Quaerat quisquam quasi nobis nam totam quam blanditiis, voluptates quis
-                        tenetur modi earum necessitatibus cupiditate provident quos eveniet eius 
+        <div class="reasons">
+          <h2 class="reasons-text p-2 text-center">
+            Why choose us over other competitors?
+            </h1>
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4 justify-content-center mb-3">
+                  <div class="card shadow-lg">
+                    <!-- <img src="./imgs/echest.png" class="card-img-top" alt="EnderChest"> -->
+                    <div class="card-body">
+                      <h5 class="card-title">Cheapest Prices</h5>
+                      <p class="card-text">Our prices are some of the cheapest around.
+                        Other 2b2t shops' prices can go up to $5 for a shulker,
+                        while here we cut our prices often and can go as low as $0.50-$1!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 justify-content-center mb-3">
+                  <div class="card shadow-lg">
+                    <!-- <img src="./imgs/echest.png" class="card-img-top" alt="EnderChest"> -->
+                    <div class="card-body">
+                      <h5 class="card-title">Fastest Delivery</h5>
+                      <p class="card-text">Our delivery team works hard to make sure
+                        that our que stays clear, and your items get to you as quickly
+                        as possible! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Enim earum laboriosam facilis repudiandae ullam similique nam, reprehenderit
+                        ratione illum! Commodi, vero obcaecati fugit quo hic ipsum voluptate atque
+                        dignissimos quas.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 justify-content-center mb-3">
+                  <div class="card shadow-lg">
+                    <!-- <img src="./imgs/echest.png" class="card-img-top" alt="EnderChest"> -->
+                    <div class="card-body">
+                      <h5 class="card-title">Great Support</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quam cumque aut minus atque hic veritatis dolorum nemo qui nulla.
+                        Labore, quod? Commodi excepturi dignissimos voluptatem deleniti architecto vitae.
+                        Rem, cupiditate.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 justify-content-center mb-3">
+                  <div class="card shadow-lg">
+                    <!-- <img src="./imgs/echest.png" class="card-img-top" alt="EnderChest"> -->
+                    <div class="card-body">
+                      <h5 class="card-title">Reputable Owners</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quam cumque aut minus atque hic veritatis dolorum nemo qui nulla.
+                        Labore, quod? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quaerat quisquam quasi nobis nam totam quam blanditiis, voluptates quis
+                        tenetur modi earum necessitatibus cupiditate provident quos eveniet eius
                         fugit, facere sapiente?
-                       </p>
-                     </div>
-                   </div>
-             </div>
-             <div class="col-12 col-sm-6 col-lg-4 justify-content-center mb-3">
-                 <div class="card shadow-lg">
-                     <!-- <img src="./imgs/echest.png" class="card-img-top" alt="EnderChest"> -->
-                     <div class="card-body">
-                       <h5 class="card-title">Your Data is Safe</h5>
-                       <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                       Quam cumque aut minus atque hic veritatis dolorum nemo qui nulla. 
-                       Labore, quod?
-                       </p>
-                     </div>
-                   </div>
-             </div>
-             <div class="col-12 col-sm-6 col-lg-4 justify-content-center mb-3">
-                 <div class="card shadow-lg">
-                     <!-- <img src="./imgs/echest.png" class="card-img-top" alt="EnderChest"> -->
-                     <div class="card-body">
-                       <h5 class="card-title">Used by Many Players</h5>
-                       <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                       Quam cumque aut minus atque hic veritatis dolorum nemo qui nulla. 
-                       Labore, quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                       Quaerat quisquam quasi nobis nam totam quam blanditiis.
-                       </p>
-                     </div>
-                   </div>
-             </div>
- 
-             <!-- <div class="col-12 list-seperator">
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 justify-content-center mb-3">
+                  <div class="card shadow-lg">
+                    <!-- <img src="./imgs/echest.png" class="card-img-top" alt="EnderChest"> -->
+                    <div class="card-body">
+                      <h5 class="card-title">Your Data is Safe</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quam cumque aut minus atque hic veritatis dolorum nemo qui nulla.
+                        Labore, quod?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 justify-content-center mb-3">
+                  <div class="card shadow-lg">
+                    <!-- <img src="./imgs/echest.png" class="card-img-top" alt="EnderChest"> -->
+                    <div class="card-body">
+                      <h5 class="card-title">Used by Many Players</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quam cumque aut minus atque hic veritatis dolorum nemo qui nulla.
+                        Labore, quod? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quaerat quisquam quasi nobis nam totam quam blanditiis.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <div class="col-12 list-seperator">
                  <hr class="text-white-100">
              </div>
               -->
-             
-         </div>
- 
-           </div>
-       </div>
-         </div>  
-       </div>
-     </section>
-     <img class="wavesbot" src="./imgs/waves/2_waves/yellow_2.png" alt="">
+
+              </div>
+
+            </div>
+        </div>
+      </div>
+  </div>
+  </section>
+  <img class="wavesbot" src="./imgs/waves/2_waves/yellow_2.png" alt="">
   </div>
 
 
 
 
-<div class="homesectionall">
-  <img class="waves wavestop orangewave" id="about" src="./imgs/waves/3_waves/orange_3.png" alt="">
+  <div class="aboutsectionall">
+    <img class="waves wavestop" id="about" src="./imgs/waves/3_waves/green_3.png" alt="">
 
     <div class="about aboutsection">
-        <h1 class="about-text text-center">
-            About
-        </h1>
+      <h1 class="about-text text-center title-text">
+        About
+      </h1>
 
-        <div class="container">
-            <div class="row">
+      <div class="container">
+        <div class="row">
 
-                <div class="col-12 col-sm-6 col-lg-4 justify-content-center mb-3">
-                    <div class="card shadow-lg">
-                        <img src="./imgs/team.png" class="card-img-top cardimg-about" alt="FortuneShopTeamPicture">
-                        <div class="card-body">
-                          <!-- <h5 class="card-title">Fortune Team</h5> -->
-                          <!-- <p class="card-text">Fortune Shop currently consists of 3 players. 
-                            <strong>Pelle15</strong>, <strong>Yfua</strong>, and the owner,
-                            <strong>L4ama</strong>. These players are committed to providing the
-                            cheapest prices and the best service out of any 2b2t shop.
-                          </p> -->
-                        </div>
-                      </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-8 justify-content-center mb-3">
-                    <div class="card shadow-lg">
-                        <div class="card-body">
-                          <h4 class="card-title">The Fortune Team</h4>
-                          <p class="card-text">The Fortune Team currently consists of 3 players. 
-                            <strong>Pelle15</strong>, <strong>Yfua</strong>, and the owner,
-                            <strong>L4ama</strong>. These players are committed to providing the
-                            cheapest prices and the best service out of any 2b2t shop. Lorem ipsum dolor 
-                            sit amet consectetur adipisicing elit. Illum laboriosam, repellendus aliquam 
-                          </p>
-                        </div>
-                      </div>
-                </div>
+          <div class="col-12 col-sm-6 col-lg-4 justify-content-center mb-3">
+            <div class="card shadow-lg">
+              <img src="./imgs/team.png" class="card-img-top cardimg-about" alt="FortuneShopTeamPicture">
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-8 justify-content-center mb-3">
+            <div class="card shadow-lg">
+              <div class="card-body">
+                <h4 class="card-title">The Fortune Team</h4>
+                <p class="card-text">The Fortune Team currently consists of 3 players.
+                  <strong>Pelle15</strong>, <strong>Yfua</strong>, and the owner,
+                  <strong>L4ama</strong>. These players are committed to providing the
+                  cheapest prices and the best service out of any 2b2t shop. Lorem ipsum dolor
+                  sit amet consectetur adipisicing elit. Illum laboriosam, repellendus aliquam
+                </p>
+              </div>
+            </div>
+          </div>
 
-                <!-- MEET THE TEAM START -->
-                <div class="col-12 col-sm-6 col-lg-4 justify-content-center mb-3">
-                    <div class="card shadow-lg">
-                        <div class="card-body">
-                        <img src="./imgs/pellefront.png" class="card-img-top cardimg-about pellefront" alt="FortuneShopTeamPicture">
-                          <h4 class="card-title team-card-title align-middle">Pelle15</h4>
-                          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                              Cupiditate temporibus fugit suscipit corrupti vero unde, voluptates ullam 
-                              doloremque, quasi inventore vitae atque, accusamus id quam! Voluptate alias 
-                              dolore placeat iure!
-                          </p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 justify-content-center mb-3">
-                    <div class="card shadow-lg">
-                        <div class="card-body">
-                        <img src="./imgs/yfuafront.png" class="card-img-top cardimg-about pellefront" alt="FortuneShopTeamPicture">
-                          <h4 class="card-title team-card-title align-middle">Yfua</h4>
-                          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                              Cupiditate temporibus fugit suscipit corrupti vero unde, voluptates ullam 
-                              doloremque, quasi inventore vitae atque, accusamus id quam! Voluptate alias 
-                              dolore placeat iure!
-                          </p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 justify-content-center mb-3">
-                    <div class="card shadow-lg">
-                        <div class="card-body">
-                        <img src="./imgs/l4amafront.png" class="card-img-top cardimg-about pellefront" alt="FortuneShopTeamPicture">
-                          <h4 class="card-title team-card-title align-middle">L4ama</h4>
-                          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                              Cupiditate temporibus fugit suscipit corrupti vero unde, voluptates ullam 
-                              doloremque, quasi inventore vitae atque, accusamus id quam! Voluptate alias 
-                              dolore placeat iure!
-                          </p>
-                        </div>
-                      </div>
-                </div>
+          <!-- MEET THE TEAM START -->
+          <div class="col-12 col-sm-6 col-lg-4 justify-content-center mb-3">
+            <div class="card shadow-lg">
+              <div class="card-body">
+                <img src="./imgs/pellefront.png" class="card-img-top cardimg-about pellefront"
+                  alt="FortuneShopTeamPicture">
+                <h4 class="card-title team-card-title align-middle">Pelle15</h4>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Cupiditate temporibus fugit suscipit corrupti vero unde, voluptates ullam
+                  doloremque, quasi inventore vitae atque, accusamus id quam! Voluptate alias
+                  dolore placeat iure!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 justify-content-center mb-3">
+            <div class="card shadow-lg">
+              <div class="card-body">
+                <img src="./imgs/yfuafront.png" class="card-img-top cardimg-about pellefront"
+                  alt="FortuneShopTeamPicture">
+                <h4 class="card-title team-card-title align-middle">Yfua</h4>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Cupiditate temporibus fugit suscipit corrupti vero unde, voluptates ullam
+                  doloremque, quasi inventore vitae atque, accusamus id quam! Voluptate alias
+                  dolore placeat iure!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 justify-content-center mb-3">
+            <div class="card shadow-lg">
+              <div class="card-body">
+                <img src="./imgs/l4amafront.png" class="card-img-top cardimg-about pellefront"
+                  alt="FortuneShopTeamPicture">
+                <h4 class="card-title team-card-title align-middle">L4ama</h4>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Cupiditate temporibus fugit suscipit corrupti vero unde, voluptates ullam
+                  doloremque, quasi inventore vitae atque, accusamus id quam! Voluptate alias
+                  dolore placeat iure!
+                </p>
+              </div>
+            </div>
+          </div>
 
-
-    </div>    
 
         </div>
+
+      </div>
     </div>
 
-  <img class="waves wavesbot" src="./imgs/waves/4_waves/orange_4.png" alt="">
+    <img class="waves wavesbot" src="./imgs/waves/4_waves/green_4.png" alt="">
 
-</div>
-
-
+  </div>
 
 
-    <footer class="footer bg-dark">
-       <p class="footertext text-center">
-            Designed and Created by JakeJeeperjinks
-       </p>
-    </footer>
+
+  <div class="reviewsectionall" id="reviews">
+    <img class="waves wavestop bluewave" src="./imgs/waves/2_waves/blue_2.png" alt="">
+
+    <div class="review reviewsection">
+      <h1 class="review-text text-center title-text">
+        Reviews
+      </h1>
+
+      <div class="container">
+        <div class="row reviewrow">
 
 
-      <script src="./node_modules/typed.js/lib/typed.js"></script>
-      <script src="./scripts/bootstrap.bundle.js"></script>
-      <script src="app.js"></script>
-</body> 
+        </div>
+
+      </div>
+    </div>
+
+    <img class="waves wavesbot" src="./imgs/waves/3_waves/blue_3.png" alt="">
+
+  </div>
+
+
+
+  <footer class="footer bg-dark">
+    <p class="footertext text-center">
+      Designed and Created by JakeJeeperjinks
+    </p>
+  </footer>
+
+
+  <script src="./node_modules/typed.js/lib/typed.js"></script>
+  <script src="./scripts/bootstrap.bundle.js"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>
