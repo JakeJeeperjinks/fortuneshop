@@ -1,13 +1,67 @@
 body {
     /* background: rgb(116,116,116);
     background: linear-gradient(90deg, rgba(116,116,116,1) 0%, rgba(54,54,54,1) 100%); */
-    background-color: #c6c6c6;
-    padding-top: 70px;
+    background-color: #d0faff;
+    padding-top: 90px;
 }
 
 nav {
     font-family: 'Atkinson Hyperlegible', sans-serif;
 }
+
+.logo {
+    animation: rotation 8s linear infinite;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+
+.homepage {
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+
+.homesection {
+    background-color: #FCFCD2;   
+    padding-bottom: 50px;
+    padding-top: 30px;
+    /* #FCFCD2 */
+    /* #d2e7d2 */
+    /* #dadfe8 */
+    /* #ffedcc */
+
+}
+
+.aboutsection {
+    background-color: #ffeecf;   
+    padding-bottom: 50px;
+    padding-top: 25px;
+    /* #FCFCD2 */
+    /* #d2e7d2 */
+    /* #dadfe8 */
+    /* #ffeecf */
+
+
+}
+
+.waves {
+    width: 100%;
+    height:auto;
+}
+
+.wavesbot {
+    width: 100%;
+    transform:rotate(180deg);
+    margin-bottom: 150px;
+}
+
 
 .list-seperator {
     margin-top: 35px;
@@ -61,6 +115,18 @@ nav {
     }
 }
 
+@media(max-width: 450px) {
+    .wavestop {
+        margin-top:20px;
+    }
+    
+    .wavesbot {
+        width: 100%;
+        transform:rotate(180deg);
+        margin-bottom: 150px;
+    }
+}
+
 @media(max-width: 290px) {
     .title {
         font-size: 1.3em;
@@ -70,3 +136,28 @@ nav {
         font-size: 1.1em;
     }
 }
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #d8d8d8;
+    border-radius: 5px;
+    
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

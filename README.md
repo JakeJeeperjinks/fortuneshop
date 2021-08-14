@@ -1,7 +1,7 @@
 <br/>
 <p align="center">
   <a href="https://github.com/JakeJeeperjinks/fortuneshop">
-    <img src="imgs/l4amafront.png" alt="Logo" width="80" height="80">
+    <img src="imgs/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Fortune Shop Website</h3>

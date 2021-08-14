@@ -6,12 +6,3 @@ const typed = new Typed('#typed', {
     backDelay: 1100,
     backSpeed: 30,
   });
-
-// const aboutPage = document.querySelector('#about');
-// aboutPage.addEventListener('DOMContentLoaded', function(){
-//     console.log("Loaded")
-// })
-
-// document.addEventListener('DOMContentLoaded', function(){
-//     console.log("LoadedDoc");
-// })
