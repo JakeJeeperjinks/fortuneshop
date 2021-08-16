@@ -1,3 +1,4 @@
+/* Website Created by JakeJeeperjinks (https://github.com/JakeJeeperjinks) */
 body {
     /* background: rgb(116,116,116);
     background: linear-gradient(90deg, rgba(116,116,116,1) 0%, rgba(54,54,54,1) 100%); */
@@ -13,6 +14,7 @@ nav {
     animation: rotation 8s linear infinite;
 }
 
+
 @keyframes rotation {
     from {
         transform: rotate(0deg);
@@ -25,14 +27,11 @@ nav {
 
 
 .homepage {
-    padding-bottom: 50px;
     padding-top: 10px;
 }
 
 .homesection {
     background-color: #FCFCD2;
-    padding-bottom: 50px;
-    padding-top: 30px;
     /* #FCFCD2 */
     /* #d2e7d2 */
     /* #dadfe8 */
@@ -42,8 +41,6 @@ nav {
 
 .aboutsection {
     background-color: #d2e7d2;
-    padding-bottom: 50px;
-    padding-top: 25px;
     /* #FCFCD2 */
     /* #d2e7d2 */
     /* #dadfe8 */
@@ -52,8 +49,15 @@ nav {
 
 .reviewsection {
     background-color: #dadfe8;
-    padding-bottom: 50px;
-    padding-top: 25px;
+    /* #FCFCD2 */
+    /* #d2e7d2 */
+    /* #dadfe8 */
+    /* #ffeecf */
+}
+
+.catalogall {
+    background-color: #ffeecf;
+    padding-bottom: 10px;
     /* #FCFCD2 */
     /* #d2e7d2 */
     /* #dadfe8 */
@@ -73,7 +77,6 @@ nav {
 
 .title-text {
     padding-bottom: 25px;
-    padding-top: 15px;
 }
 
 .list-seperator {
@@ -109,11 +112,23 @@ nav {
     width: 100%;
     height: 75px;
     color: #ededed;
+
+}
+
+.jakelink {
+    color: white;
+}
+.jakelink:hover {
+    transition: .2s;
+    color: grey;
 }
 
 .footertext {
     padding-top: 25px;
 }
+
+
+
 
 /* .cardimg-about {
     width: 75%;
@@ -152,6 +167,94 @@ nav {
     }
 }
 
+
+
+/* Style the tab */
+.tab {
+    display: block;
+}
+
+/* Style the buttons inside the tab */
+.tab li {
+    background-color: inherit;
+    float: left;
+    cursor: pointer;
+    padding: 14px 12px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab li:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab li.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    border-radius: 20px;
+    background-color: #fcdfa9;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+.innercontent {
+    animation: fadeIn .75s;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.discordlink {
+    color: black;
+}
+
+.discordlink:hover {
+    transition: .2s;
+    color: grey;
+}
+
+.tabcontent {
+    display: inline;
+}
+
+.price {
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+.product-img {
+    border-radius: 10px;
+    height: auto;
+}
+
+
+.catalog-listing {
+    background-color: #eae9e8; 
+    border-radius: 20px;
+    /* background-color: #e8fdff; */
+}
+
+
+.shop-card-title {
+    margin-top: 7px;
+    margin-bottom: 2px;
+}
+
+.pricecards {
+    height: 600px;
+    overflow-y: auto;
+}
 
 
 /* width */

@@ -1,3 +1,5 @@
+// Website Created by JakeJeeperjinks (https://github.com/JakeJeeperjinks)
+//A lot of this can probably be refactored
 const typed = new Typed('#typed', {
   strings: ['Cheapest', 'Most Reliable', 'Most Reputable', 'Best'],
   smartBackspace: true, // Default value
@@ -7,45 +9,16 @@ const typed = new Typed('#typed', {
   backSpeed: 30,
 });
 
-const reviewProfiles = [{
-    name: 'BryceDey',
-    rating: '10/10',
-    review: 'super quick great service',
-    img: './imgs/reviews/brycedey.png',
-  },
-  {
-    name: 'Domina',
-    rating: '10/10',
-    review: "Super nice, helpful, and willing to work with ya despite horrendous server conditions, got me my stuff really fast considering and I'm definitely gonna be ordering more from them in the future! Thanks again so much, ya'll are gonna make life on 2b much easier.",
-    img: './imgs/reviews/domina.png',
-  },
-  {
-    name: 'Dr3bb2',
-    rating: '7/10',
-    review: 'It took me awhile to get there but whenever I got there everything was there except for the spawn kit it was exchanged for a vokit the main reason I was wanting the spawn kit was so I could get sulker heads, but besides that other thing was nice.',
-    img: './imgs/reviews/dr3bb2.png',
-  },
-  {
-    name: 'maxmoo12',
-    rating: '9/10',
-    review: 'All good we’re delivered but the time delay was a minor inconvenience but overall, Excellent',
-    img: './imgs/reviews/maxmoo12.png',
-  },
-  {
-    name: 'suicune',
-    rating: '10/10',
-    review: 'took a while, but in the end everything was worth it! the bodyguard was amazing too!',
-    img: './imgs/reviews/suicune.png',
-  },
-  {
-    name: 'xsomniac',
-    rating: '10/10',
-    review: 'took about two hours and he worked with me fairly. will purchase from again if i need more things',
-    img: './imgs/reviews/xsomniac.png',
-  }
-]
+const tabButtonPVP = document.querySelector('.pvpkits')
+const tabButtonFlight = document.querySelector('.flightkits')
+const tabButtonBuilding = document.querySelector('.buildingkits')
+const tabButtonIllegal = document.querySelector('.illegalkits')
+const tabButtonBooks = document.querySelector('.books')
+const tabButtonConsum = document.querySelector('.consumablekits')
 
-const createReview = function (i) {
+
+
+function createReview(i) {
   const reviewRow = document.querySelector('.reviewrow')
   const mainDiv = document.createElement('div');
   const cardDiv = document.createElement('div');
@@ -55,7 +28,7 @@ const createReview = function (i) {
   const p = document.createElement('p');
 
   mainDiv.classList.add('col-12', 'col-sm-6', 'col-lg-4', 'justify-content-center', 'mb-3');
-  cardDiv.classList.add('card', 'shadow-lg');
+  cardDiv.classList.add('card', 'shadow-lg'); //All this stuff adds Bootstrap classes for styling
   cardBody.classList.add('card-body');
   img.src = reviewProfiles[i].img;
   img.classList.add('card-img-top', 'cardimg-about', 'reviewimg');
@@ -71,7 +44,112 @@ const createReview = function (i) {
   reviewRow.append(mainDiv);
 }
 
+function createListing(i, type) {
+  const itemSection = document.querySelector(`.${type}`);
+  const mainDiv = document.createElement('div');
+  const card = document.createElement('div');
+  const cardBody = document.createElement('div');
+  const heading = document.createElement('h4');
+  const img = document.createElement('img');
+  const priceP = document.createElement('p');
+  const hr = document.createElement('hr')
+  const descP = document.createElement('p');
+  
+  mainDiv.classList.add('col-12', 'col-sm-6', 'col-lg-4', 'pricecard', 'justify-content-center', 'mb-3');
+  card.classList.add('card', 'shadow-sm');
+  cardBody.classList.add('card-body', 'catalog-listing');
+  img.src = catalogListings[i].productimg;
+  img.classList.add('card-img-top', 'product-img');
+  heading.classList.add('card-title', 'shop-card-title', 'align-middle');
+  priceP.classList.add('price');
+  hr.classList.add('text-black-100');
+  descP.classList.add('card-text');
 
-for (let i = 0; i < reviewProfiles.length; i++) {
-  createReview(i);
+  heading.innerText = `${catalogListings[i].itemname}`;
+  priceP.innerText = `${catalogListings[i].price}`;
+  descP.innerText = `${catalogListings[i].desc}`;
+
+  mainDiv.append(card);
+  card.append(cardBody);
+  cardBody.append(img, heading, priceP, hr, descP);
+  itemSection.append(mainDiv);
 }
+
+let catalogListings = undefined;
+fetch('./json/catalog.json')
+  .then(function (data) {
+    return data.json();
+  })
+  .then(function (obj) {
+    catalogListings = obj;
+    console.log(catalogListings)
+  })
+  .then(function () {
+    for (let i = 0; i < catalogListings.length; i++) {
+      createListing(i, catalogListings[i].category);
+    }
+  })
+  .catch(function(err) {
+    console.log(err);
+    console.log("Whoops, something went wrong when loading listings!")
+  })
+
+
+let reviewProfiles = undefined;
+
+fetch("./json/reviewdata.json")
+  .then(function (data) {
+    return data.json();
+  })
+  .then(function (obj) {
+    reviewProfiles = obj;
+    console.log(reviewProfiles)
+  })
+  .then(function () {
+    for (let i = 0; i < reviewProfiles.length; i++) {
+      createReview(i);
+    }
+  })
+  .catch(function (err) {
+    //add err msg here, like append an error message to reviews do not load
+    console.error('Something went wrong with retrieving the reviews!')
+  })
+
+
+
+tabButtonPVP.addEventListener('click', () => {
+  openCatalog(event, 'pvp')
+})
+document.querySelector('.pvpkits').click();
+tabButtonFlight.addEventListener('click', () => {
+  openCatalog(event, 'flight')
+})
+tabButtonConsum.addEventListener('click', () => {
+  openCatalog(event, 'consumable')
+})
+tabButtonBuilding.addEventListener('click', () => {
+  openCatalog(event, 'building')
+})
+tabButtonIllegal.addEventListener('click', () => {
+  openCatalog(event, 'illegal')
+})
+tabButtonBooks.addEventListener('click', () => {
+  openCatalog(event, 'bookstab')
+})
+
+
+
+function openCatalog(evt, tabName) {
+  let i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "inline";
+  evt.currentTarget.className += " active";
+}
+

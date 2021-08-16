@@ -1,0 +1,121 @@
+[{
+        "itemname": "Ender Chest Kit",
+        "price": "$0.50 USD",
+        "desc": "A shulker containing 27 stacks of Ender Chests.",
+        "category": "building",
+        "productimg": "./imgs/catalog/building/echest.png"
+    },
+    {
+        "itemname": "Gapple Kit",
+        "price": "$0.50 USD",
+        "desc": "A shulker containing 27 stacks of God Apples.",
+        "category": "consumables",
+        "productimg": "./imgs/catalog/consumable/gap.png"
+    },
+    {
+        "itemname": "XP Kit",
+        "price": "$0.50 USD",
+        "desc": "A shulker containing 27 stacks of Bottles O' Enchanting.",
+        "category": "consumables",
+        "productimg": "./imgs/catalog/consumable/xp.png"
+    },
+    {
+        "itemname": "Totem Kit",
+        "price": "$0.50 USD",
+        "desc": "A shulker containing 27 stacks of Totems of Undying.",
+        "category": "consumables",
+        "productimg": "./imgs/catalog/consumable/totem.png"
+    },
+    {
+        "itemname": "Elytra Kit",
+        "price": "$1.00 USD",
+        "desc": "A shulker containing 27 Elytras.",
+        "category": "flight",
+        "productimg": "./imgs/catalog/flight/elytra.png"
+    },
+    {
+        "itemname": "Fluffbuck35 PVP Kit",
+        "price": "$0.50 USD",
+        "desc": "A shulker containing 2 armor sets, a sword, TNT, and much more!",
+        "category": "pvp",
+        "productimg": "./imgs/catalog/pvp/fluffback.png"
+    },
+    {
+        "itemname": "Spawn Kit",
+        "price": "$0.70 USD",
+        "desc": "A shulker containing the essentials for navigating spawn.",
+        "category": "pvp",
+        "productimg": "./imgs/catalog/pvp/spawnkit.png"
+    },
+    {
+        "itemname": "RS24 Kit",
+        "price": "$1.00 USD",
+        "desc": "A shulker containing primarily tools and armor.",
+        "category": "pvp",
+        "productimg": "./imgs/catalog/pvp/rs24.png"
+    },
+    {
+        "itemname": "PVP Kit",
+        "price": "$0.50 USD",
+        "desc": "A shulker containing all the essentials for pvp on 2b2t.",
+        "category": "pvp",
+        "productimg": "./imgs/catalog/pvp/pvpkit.png"
+    },
+    {
+        "itemname": "VoKit",
+        "price": "$0.60 USD",
+        "desc": "A shulker containing supplies to get you started!",
+        "category": "pvp",
+        "productimg": "./imgs/catalog/pvp/vokit.png"
+    },
+    {
+        "itemname": "Everlast PVP Kit",
+        "price": "$0.50 USD",
+        "desc": "A shulker containing gear for Crystal PVP and swordplay.",
+        "category": "pvp",
+        "productimg": "./imgs/catalog/pvp/everlast.png"
+    },
+    {
+        "itemname": "Firework Rocket Kit",
+        "price": "$1.00 USD",
+        "desc": "A shulker containing 27 stacks of rockets.",
+        "category": "flight",
+        "productimg": "./imgs/catalog/flight/rocket.png"
+    },
+    {
+        "itemname": "AYEEEE by HQ",
+        "price": "$10.00 USD",
+        "desc": "Please contact 'Mortal Vet#9966' on discord for purchase.",
+        "category": "book",
+        "productimg": "./imgs/catalog/books/aye_hq_mortalvet.png" 
+    },
+    {
+        "itemname": "To Armorsmith by Fit",
+        "price": "$8.00 USD",
+        "desc": "Please contact 'Mortal Vet#9966' on discord for purchase.",
+        "category": "book",
+        "productimg": "./imgs/catalog/books/fit_armorsmith_mortalvet.png" 
+    },
+    {
+        "itemname": "Cops by Jakethasnake52",
+        "price": "$4.00 USD",
+        "desc": "Please contact 'Mortal Vet#9966' on discord for purchase.",
+        "category": "book",
+        "productimg": "./imgs/catalog/books/jakethasnake_cops_mortalvet.png" 
+    },
+    {
+        "itemname": "From SalC1 by SalC1",
+        "price": "$5.00 USD",
+        "desc": "Please contact 'Mortal Vet#9966' on discord for purchase.",
+        "category": "book",
+        "productimg": "./imgs/catalog/books/salc1_mortalvet.png" 
+    },
+    {
+        "itemname": "fewfesf by Wikipedia",
+        "price": "$5.00 USD",
+        "desc": "Please contact 'Mortal Vet#9966' on discord for purchase.",
+        "category": "book",
+        "productimg": "./imgs/catalog/books/wikipedia_fewfesf_mortalvet.png" 
+    }
+
+]
