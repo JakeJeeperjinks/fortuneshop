@@ -15,6 +15,26 @@ try {
 }
 
 
+let logo = document.querySelector('.logo');
+let audioFile = new Audio('./imgs/oasim.ogg')
+let clicks = 0;
+
+function audioPlay() {
+  audioFile.play();
+}
+
+function resetClicks() {
+  clicks = 0;
+}
+
+document.addEventListener('click', () => {
+  clicks += 1;
+  if(clicks === 21) {
+    audioPlay() 
+    resetClicks()}
+})
+
+
 const tabButtonPVP = document.querySelector('.pvpkits')
 const tabButtonFlight = document.querySelector('.flightkits')
 const tabButtonBuilding = document.querySelector('.buildingkits')
@@ -123,6 +143,8 @@ fetch("./json/reviewdata.json")
 
 
 
+
+
 tabButtonPVP.addEventListener('click', () => {
   openCatalog(event, 'pvp')
 })
@@ -158,4 +180,8 @@ function openCatalog(evt, tabName) {
   document.getElementById(tabName).style.display = "inline";
   evt.currentTarget.className += " active";
 }
+
+
+
+
 
