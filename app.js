@@ -1,13 +1,19 @@
 // Website Created by JakeJeeperjinks (https://github.com/JakeJeeperjinks)
 //A lot of this can probably be refactored
-const typed = new Typed('#typed', {
-  strings: ['Cheapest', 'Most Reliable', 'Most Reputable', 'Best'],
-  smartBackspace: true, // Default value
-  typeSpeed: 60,
-  loop: true,
-  backDelay: 1100,
-  backSpeed: 30,
-});
+try {
+  const typed = new Typed('#typed', {
+    strings: ['Cheapest', 'Most Reliable', 'Most Reputable', 'Best'],
+    smartBackspace: true, // Default value
+    typeSpeed: 60,
+    loop: true,
+    backDelay: 1100,
+    backSpeed: 30,
+  });
+} catch (err) {
+  console.log("Whoops, Typed.js didn't load!")
+  console.log(err)
+}
+
 
 const tabButtonPVP = document.querySelector('.pvpkits')
 const tabButtonFlight = document.querySelector('.flightkits')
