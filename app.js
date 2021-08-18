@@ -27,9 +27,9 @@ function resetClicks() {
   clicks = 0;
 }
 
-document.addEventListener('click', () => {
+logo.addEventListener('click', () => {
   clicks += 1;
-  if(clicks === 21) {
+  if(clicks === 20) {
     audioPlay() 
     resetClicks()}
 })
@@ -108,7 +108,6 @@ fetch('./json/catalog.json')
   })
   .then(function (obj) {
     catalogListings = obj;
-    console.log(catalogListings)
   })
   .then(function () {
     for (let i = 0; i < catalogListings.length; i++) {
@@ -129,7 +128,6 @@ fetch("./json/reviewdata.json")
   })
   .then(function (obj) {
     reviewProfiles = obj;
-    console.log(reviewProfiles)
   })
   .then(function () {
     for (let i = 0; i < reviewProfiles.length; i++) {
