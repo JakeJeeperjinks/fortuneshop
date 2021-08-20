@@ -16,7 +16,7 @@ try {
 
 
 let logo = document.querySelector('.logo');
-let audioFile = new Audio('./imgs/oasim.ogg')
+let audioFile = new Audio('./imgs/oasim.ogg') //This is just an easter egg type thing lol, no real purpose aside from just being an easter egg
 let clicks = 0;
 
 function audioPlay() {
